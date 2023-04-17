@@ -25,6 +25,7 @@ export default function ProductsTable() {
         <TableHead>
           <TableRow>
             <TableCell>Title</TableCell>
+            <TableCell>Type</TableCell>
             <TableCell align="right">Description</TableCell>
             <TableCell align="right">Price</TableCell>
             <TableCell align="right">Count</TableCell>
@@ -37,6 +38,7 @@ export default function ProductsTable() {
               <TableCell component="th" scope="row">
                 {product.productName}
               </TableCell>
+              <TableCell align="right">{product.productType}</TableCell>
               <TableCell align="right">{product.description}</TableCell>
               <TableCell align="right">
                 {formatAsPrice(product.price, product.currency)}

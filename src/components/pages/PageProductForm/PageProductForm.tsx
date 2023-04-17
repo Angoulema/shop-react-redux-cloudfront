@@ -58,7 +58,17 @@ export default function PageProductForm() {
                 <Grid item xs={12}>
                   <Field
                     component={TextField}
-                    name="title"
+                    name="productType"
+                    label="productType"
+                    fullWidth
+                    autoComplete="off"
+                    required
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <Field
+                    component={TextField}
+                    name="productName"
                     label="Title"
                     fullWidth
                     autoComplete="off"
@@ -80,7 +90,17 @@ export default function PageProductForm() {
                   <Field
                     component={TextField}
                     name="price"
-                    label="Price ($)"
+                    label="Price"
+                    fullWidth
+                    autoComplete="off"
+                    required
+                  />
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                  <Field
+                    component={TextField}
+                    name="currency"
+                    label="Currency"
                     fullWidth
                     autoComplete="off"
                     required
